@@ -38,7 +38,7 @@ export class DetailsPage {
     }
 
     getImageUrl = function(movie){
-        return movie.poster_path ? "https://image.tmdb.org/t/p/w92" + movie.poster_path : 'http://lorempixel.com/92/138/animals/';
+        return movie.poster_path ? "https://image.tmdb.org/t/p/w300_and_h450_bestv2" + movie.poster_path : 'http://lorempixel.com/92/138/animals/';
     }
 
     getActorsList(movie) {

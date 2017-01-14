@@ -39,6 +39,6 @@ export class ActorsPage {
 
     getImageUrl = function(actor){
         console.log(actor);
-        return actor.profile_path ? "https://image.tmdb.org/t/p/w92" + actor.profile_path : 'http://lorempixel.com/92/138/animals/';
+        return actor.profile_path ? "https://image.tmdb.org/t/p/w300_and_h450_bestv2" + actor.profile_path : 'http://lorempixel.com/600/138/animals/';
     }
 }
