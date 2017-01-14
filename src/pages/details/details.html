@@ -1,0 +1,15 @@
+<ion-header>  
+  <ion-navbar>
+   <ion-title>Resultats pour {{movie}}"</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content *ngIf="!this.isLoading && !this.isError" class="card-background-page">
+
+  <ion-card *ngFor="let movie of this.data" (click)="getActorsList(movie)">
+    <img [src]="getImageUrl(movie)" />
+    <div class="card-title">{{movie.original_title}}</div>
+  </ion-card>
+
+</ion-content>

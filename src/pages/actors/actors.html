@@ -1,0 +1,16 @@
+<ion-header>  
+  <ion-navbar>
+   <ion-title>Resultats pour {{movie_title}}"</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content class="card-background-page">
+
+  <ion-card ng-if="!this.isLoading" *ngFor="let actor of this.data">
+    <img [src]="getImageUrl(actor)" />
+    <div class="card-title">{{actor.name}}</div>
+    <div class="card-subtitle">joue le rôle de {{actor.character}}</div>
+  </ion-card>
+
+</ion-content>

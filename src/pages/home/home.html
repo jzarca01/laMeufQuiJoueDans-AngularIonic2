@@ -1,0 +1,26 @@
+<ion-header>  
+  <ion-navbar>
+    <ion-buttons end>
+     <button ion-button (click)="showCredits()">
+          <ion-icon name="ios-information-circle-outline"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="home"> 
+  <div class="content">
+    <h1>C'est qui déjà la meuf qui joue dans</h1>
+      <ion-list>
+        <ion-item>
+          <ion-label floating>le film</ion-label>
+          <ion-input type="text" [(ngModel)]="this.movie"></ion-input>
+        </ion-item>
+      </ion-list>
+
+      <div padding>
+        <button ion-button color="primary" block (click)="launchSearch()">Rechercher</button>
+      </div>
+    </div>
+
+</ion-content>  

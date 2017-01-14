@@ -1,0 +1,23 @@
+page-home {
+    ion-content {
+        background-image: url("http://www.coudert.tv/wp-content/uploads/2016/03/Pop-Corn-1.jpeg");
+        background-size: cover;
+        padding-top: 50%;
+
+        h1 {
+            font-size: 2rem;
+            text-align: center;
+            color: black;
+            background: white;
+            opacity: 0.7;
+        }
+
+        .content {
+            margin-top: 40%;
+        }
+
+        ion-list {
+            opacity: 0.7;
+        }
+    }
+}
